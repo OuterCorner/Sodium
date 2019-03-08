@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7810D252232F82E00AD8B2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7810D242232F82E00AD8B2F /* AppDelegate.m */; };
+		D7810D272232F82F00AD8B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7810D262232F82F00AD8B2F /* Assets.xcassets */; };
+		D7810D2A2232F82F00AD8B2F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7810D282232F82F00AD8B2F /* MainMenu.xib */; };
+		D7810D2D2232F82F00AD8B2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7810D2C2232F82F00AD8B2F /* main.m */; };
+		D7810D402232F8B700AD8B2F /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7810D3A2232F86400AD8B2F /* Sodium.framework */; };
+		D7810D422232F8C800AD8B2F /* Sodium.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7810D3A2232F86400AD8B2F /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7810D392232F86400AD8B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7810D342232F86300AD8B2F /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D7810CF82232DF1E00AD8B2F;
+			remoteInfo = Sodium;
+		};
+		D7810D3B2232F86400AD8B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7810D342232F86300AD8B2F /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D7810D092232DF6C00AD8B2F;
+			remoteInfo = sodium;
+		};
+		D7810D3D2232F8B000AD8B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7810D342232F86300AD8B2F /* Sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D7810CF72232DF1E00AD8B2F;
+			remoteInfo = Sodium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7810D412232F8BC00AD8B2F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D7810D422232F8C800AD8B2F /* Sodium.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D7810D202232F82E00AD8B2F /* Sample Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7810D232232F82E00AD8B2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7810D242232F82E00AD8B2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7810D262232F82F00AD8B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7810D292232F82F00AD8B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D7810D2B2232F82F00AD8B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7810D2C2232F82F00AD8B2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7810D2E2232F82F00AD8B2F /* Sample_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample_Mac.entitlements; sourceTree = "<group>"; };
+		D7810D342232F86300AD8B2F /* Sodium.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sodium.xcodeproj; path = ../../Sodium.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7810D1D2232F82E00AD8B2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7810D402232F8B700AD8B2F /* Sodium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7810D172232F82E00AD8B2F = {
+			isa = PBXGroup;
+			children = (
+				D7810D342232F86300AD8B2F /* Sodium.xcodeproj */,
+				D7810D222232F82E00AD8B2F /* Sample Mac */,
+				D7810D212232F82E00AD8B2F /* Products */,
+				D7810D3F2232F8B700AD8B2F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D7810D212232F82E00AD8B2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7810D202232F82E00AD8B2F /* Sample Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7810D222232F82E00AD8B2F /* Sample Mac */ = {
+			isa = PBXGroup;
+			children = (
+				D7810D232232F82E00AD8B2F /* AppDelegate.h */,
+				D7810D242232F82E00AD8B2F /* AppDelegate.m */,
+				D7810D262232F82F00AD8B2F /* Assets.xcassets */,
+				D7810D282232F82F00AD8B2F /* MainMenu.xib */,
+				D7810D2B2232F82F00AD8B2F /* Info.plist */,
+				D7810D2C2232F82F00AD8B2F /* main.m */,
+				D7810D2E2232F82F00AD8B2F /* Sample_Mac.entitlements */,
+			);
+			path = "Sample Mac";
+			sourceTree = "<group>";
+		};
+		D7810D352232F86300AD8B2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7810D3A2232F86400AD8B2F /* Sodium.framework */,
+				D7810D3C2232F86400AD8B2F /* libsodium.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7810D3F2232F8B700AD8B2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7810D1F2232F82E00AD8B2F /* Sample Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7810D312232F82F00AD8B2F /* Build configuration list for PBXNativeTarget "Sample Mac" */;
+			buildPhases = (
+				D7810D1C2232F82E00AD8B2F /* Sources */,
+				D7810D1D2232F82E00AD8B2F /* Frameworks */,
+				D7810D412232F8BC00AD8B2F /* Embed Frameworks */,
+				D7810D1E2232F82E00AD8B2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7810D3E2232F8B000AD8B2F /* PBXTargetDependency */,
+			);
+			name = "Sample Mac";
+			productName = "Sample Mac";
+			productReference = D7810D202232F82E00AD8B2F /* Sample Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7810D182232F82E00AD8B2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Outer Corner";
+				TargetAttributes = {
+					D7810D1F2232F82E00AD8B2F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D7810D1B2232F82E00AD8B2F /* Build configuration list for PBXProject "Sample Mac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7810D172232F82E00AD8B2F;
+			productRefGroup = D7810D212232F82E00AD8B2F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D7810D352232F86300AD8B2F /* Products */;
+					ProjectRef = D7810D342232F86300AD8B2F /* Sodium.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D7810D1F2232F82E00AD8B2F /* Sample Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D7810D3A2232F86400AD8B2F /* Sodium.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Sodium.framework;
+			remoteRef = D7810D392232F86400AD8B2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D7810D3C2232F86400AD8B2F /* libsodium.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsodium.a;
+			remoteRef = D7810D3B2232F86400AD8B2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7810D1E2232F82E00AD8B2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7810D272232F82F00AD8B2F /* Assets.xcassets in Resources */,
+				D7810D2A2232F82F00AD8B2F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7810D1C2232F82E00AD8B2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7810D2D2232F82F00AD8B2F /* main.m in Sources */,
+				D7810D252232F82E00AD8B2F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7810D3E2232F8B000AD8B2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sodium;
+			targetProxy = D7810D3D2232F8B000AD8B2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7810D282232F82F00AD8B2F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7810D292232F82F00AD8B2F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7810D2F2232F82F00AD8B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D7810D302232F82F00AD8B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D7810D322232F82F00AD8B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sample Mac/Sample_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 32HNEEH56A;
+				INFOPLIST_FILE = "Sample Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.outercorner.Sodium.Sample-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7810D332232F82F00AD8B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sample Mac/Sample_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 32HNEEH56A;
+				INFOPLIST_FILE = "Sample Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.outercorner.Sodium.Sample-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7810D1B2232F82E00AD8B2F /* Build configuration list for PBXProject "Sample Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7810D2F2232F82F00AD8B2F /* Debug */,
+				D7810D302232F82F00AD8B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7810D312232F82F00AD8B2F /* Build configuration list for PBXNativeTarget "Sample Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7810D322232F82F00AD8B2F /* Debug */,
+				D7810D332232F82F00AD8B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7810D182232F82E00AD8B2F /* Project object */;
+}
