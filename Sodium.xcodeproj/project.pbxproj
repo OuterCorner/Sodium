@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D7810CFD2232DF1E00AD8B2F /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = D7810CFB2232DF1E00AD8B2F /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7810D142232E80A00AD8B2F /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7810D092232DF6C00AD8B2F /* libsodium.a */; };
+		D7810D452232FB6C00AD8B2F /* Sodium.m in Sources */ = {isa = PBXBuildFile; fileRef = D7810D442232FB6C00AD8B2F /* Sodium.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D7810D092232DF6C00AD8B2F /* libsodium.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsodium.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7810D0E2232DF9700AD8B2F /* sodium.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = sodium.xcconfig; sourceTree = "<group>"; };
 		D7810D0F2232E13F00AD8B2F /* build_sodium.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_sodium.sh; sourceTree = "<group>"; };
+		D7810D442232FB6C00AD8B2F /* Sodium.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sodium.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D7810CFB2232DF1E00AD8B2F /* Sodium.h */,
+				D7810D442232FB6C00AD8B2F /* Sodium.m */,
 				D7810CFC2232DF1E00AD8B2F /* Info.plist */,
 			);
 			path = Sodium;
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7810D452232FB6C00AD8B2F /* Sodium.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
