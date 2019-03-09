@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D726448A2234591100646DA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72644892234591100646DA2 /* AppDelegate.m */; };
+		D726448D2234591100646DA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D726448C2234591100646DA2 /* ViewController.m */; };
+		D72644902234591100646DA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D726448E2234591100646DA2 /* Main.storyboard */; };
+		D72644922234591200646DA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72644912234591200646DA2 /* Assets.xcassets */; };
+		D72644952234591200646DA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72644932234591200646DA2 /* LaunchScreen.storyboard */; };
+		D72644982234591200646DA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D72644972234591200646DA2 /* main.m */; };
+		D72644AA2234593A00646DA2 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72644A42234592A00646DA2 /* Sodium.framework */; };
+		D72644AD2234596C00646DA2 /* Sodium.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D72644A42234592A00646DA2 /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D72644A32234592A00646DA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D726449E2234592A00646DA2 /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D7810CF82232DF1E00AD8B2F;
+			remoteInfo = Sodium;
+		};
+		D72644A52234592A00646DA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D726449E2234592A00646DA2 /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D7810D092232DF6C00AD8B2F;
+			remoteInfo = sodium;
+		};
+		D72644A72234593500646DA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D726449E2234592A00646DA2 /* Sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D7810CF72232DF1E00AD8B2F;
+			remoteInfo = Sodium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D72644AC2234596400646DA2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D72644AD2234596C00646DA2 /* Sodium.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D72644852234591100646DA2 /* Sample iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72644882234591100646DA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D72644892234591100646DA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D726448B2234591100646DA2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D726448C2234591100646DA2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D726448F2234591100646DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D72644912234591200646DA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D72644942234591200646DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D72644962234591200646DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D72644972234591200646DA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D726449E2234592A00646DA2 /* Sodium.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sodium.xcodeproj; path = ../../Sodium.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D72644822234591100646DA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72644AA2234593A00646DA2 /* Sodium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D726447C2234591100646DA2 = {
+			isa = PBXGroup;
+			children = (
+				D726449E2234592A00646DA2 /* Sodium.xcodeproj */,
+				D72644872234591100646DA2 /* Sample iOS */,
+				D72644862234591100646DA2 /* Products */,
+				D72644A92234593A00646DA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D72644862234591100646DA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D72644852234591100646DA2 /* Sample iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D72644872234591100646DA2 /* Sample iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D72644882234591100646DA2 /* AppDelegate.h */,
+				D72644892234591100646DA2 /* AppDelegate.m */,
+				D726448B2234591100646DA2 /* ViewController.h */,
+				D726448C2234591100646DA2 /* ViewController.m */,
+				D726448E2234591100646DA2 /* Main.storyboard */,
+				D72644912234591200646DA2 /* Assets.xcassets */,
+				D72644932234591200646DA2 /* LaunchScreen.storyboard */,
+				D72644962234591200646DA2 /* Info.plist */,
+				D72644972234591200646DA2 /* main.m */,
+			);
+			path = "Sample iOS";
+			sourceTree = "<group>";
+		};
+		D726449F2234592A00646DA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D72644A42234592A00646DA2 /* Sodium.framework */,
+				D72644A62234592A00646DA2 /* libsodium.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D72644A92234593A00646DA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D72644842234591100646DA2 /* Sample iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D726449B2234591200646DA2 /* Build configuration list for PBXNativeTarget "Sample iOS" */;
+			buildPhases = (
+				D72644812234591100646DA2 /* Sources */,
+				D72644822234591100646DA2 /* Frameworks */,
+				D72644832234591100646DA2 /* Resources */,
+				D72644AC2234596400646DA2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D72644A82234593500646DA2 /* PBXTargetDependency */,
+			);
+			name = "Sample iOS";
+			productName = "Sample iOS";
+			productReference = D72644852234591100646DA2 /* Sample iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D726447D2234591100646DA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Outer Corner";
+				TargetAttributes = {
+					D72644842234591100646DA2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D72644802234591100646DA2 /* Build configuration list for PBXProject "Sample iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D726447C2234591100646DA2;
+			productRefGroup = D72644862234591100646DA2 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D726449F2234592A00646DA2 /* Products */;
+					ProjectRef = D726449E2234592A00646DA2 /* Sodium.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D72644842234591100646DA2 /* Sample iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D72644A42234592A00646DA2 /* Sodium.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Sodium.framework;
+			remoteRef = D72644A32234592A00646DA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D72644A62234592A00646DA2 /* libsodium.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsodium.a;
+			remoteRef = D72644A52234592A00646DA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D72644832234591100646DA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72644952234591200646DA2 /* LaunchScreen.storyboard in Resources */,
+				D72644922234591200646DA2 /* Assets.xcassets in Resources */,
+				D72644902234591100646DA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D72644812234591100646DA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D726448D2234591100646DA2 /* ViewController.m in Sources */,
+				D72644982234591200646DA2 /* main.m in Sources */,
+				D726448A2234591100646DA2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D72644A82234593500646DA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sodium;
+			targetProxy = D72644A72234593500646DA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D726448E2234591100646DA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D726448F2234591100646DA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D72644932234591200646DA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D72644942234591200646DA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D72644992234591200646DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D726449A2234591200646DA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D726449C2234591200646DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32HNEEH56A;
+				INFOPLIST_FILE = "Sample iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.outercorner.Sodium.Sample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D726449D2234591200646DA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32HNEEH56A;
+				INFOPLIST_FILE = "Sample iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.outercorner.Sodium.Sample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D72644802234591100646DA2 /* Build configuration list for PBXProject "Sample iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D72644992234591200646DA2 /* Debug */,
+				D726449A2234591200646DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D726449B2234591200646DA2 /* Build configuration list for PBXNativeTarget "Sample iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D726449C2234591200646DA2 /* Debug */,
+				D726449D2234591200646DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D726447D2234591100646DA2 /* Project object */;
+}
