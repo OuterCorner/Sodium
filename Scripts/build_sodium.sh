@@ -3,6 +3,7 @@ SODIUM_SRC="$TARGET_TEMP_DIR/sodium/"
 SODIUM_INSTALL="$TARGET_TEMP_DIR/sodium_install/"
 LIB_PRODUCT_NAME="$FULL_PRODUCT_NAME"
 
+
 if [ "$PLATFORM_NAME" == "" ]; then
 echo "PLATFORM_NAME not defined"
 fi
@@ -28,8 +29,6 @@ mkdir -p "$SODIUM_SRC"
 tar -C "$SODIUM_SRC" --strip-components=1 -zxf "$SODIUM_TARBALL" || exit 1
 cd "$SODIUM_SRC"
 
-CC="xcrun -sdk $PLATFORM_NAME cc"
-
 if [ -z "$LIBSODIUM_FULL_BUILD" ]; then
 	LIBSODIUM_ENABLE_MINIMAL_FLAG="--enable-minimal"
 else
@@ -46,35 +45,54 @@ echo "Creating $LIB_PRODUCT_NAME with $CONFIGURE_OPTIONS for architectures: $ARC
 for BUILDARCH in $ARCHS
 do
     echo "Building $BUILDARCH"
+	
+	make distclean > /dev/null
+	
 	CFLAGS="-arch $BUILDARCH -O2"
 	LDFLAGS="-arch $BUILDARCH"
 	
 	if [ "$PLATFORM_NAME" = "macosx" ]; then
 		CONFIGURE_OPTIONS="$SODIUM_OPTIONS"
+
 	elif [ "$PLATFORM_NAME" = "iphoneos" ]; then
-		CFLAGS="$CFLAGS -fembed-bitcode -mthumb"
-		LDFLAGS="-fembed-bitcode -mthumb"
+				
+		if [[ "$BUILDARCH" = "armv"* ]]; then
+			CFLAGS="$CFLAGS -fembed-bitcode -mthumb -isysroot $SDKROOT -mios-version-min=${IPHONEOS_DEPLOYMENT_TARGET}"
+			LDFLAGS="$LDFLAGS -fembed-bitcode -mthumb -isysroot $SDKROOT -mios-version-min=${IPHONEOS_DEPLOYMENT_TARGET}"
+		elif [ "$BUILDARCH" = "arm64" ]; then
+			CFLAGS="$CFLAGS -fembed-bitcode -isysroot $SDKROOT -mios-version-min=${IPHONEOS_DEPLOYMENT_TARGET}"
+			LDFLAGS="$LDFLAGS -fembed-bitcode -isysroot $SDKROOT -mios-version-min=${IPHONEOS_DEPLOYMENT_TARGET}"
+		fi
+
 		CONFIGURE_OPTIONS="$SODIUM_OPTIONS --host=arm-apple-darwin10 --disable-shared"
+
 	elif [ "$PLATFORM_NAME" = "iphonesimulator" ]; then
+		# Build for the simulator
+		CFLAGS="$CFLAGS -isysroot $SDKROOT -mios-version-min=${IPHONEOS_DEPLOYMENT_TARGET}"
+		LDFLAGS="$LDFLAGS -isysroot $SDKROOT -mios-version-min=${IPHONEOS_DEPLOYMENT_TARGET}"
+		
 		if [ "$BUILDARCH" = "i386" ]; then
 			CONFIGURE_OPTIONS="$SODIUM_OPTIONS --host=i686-apple-darwin10 --disable-shared"
 		elif [ "$BUILDARCH" = "x86_64" ]; then
 			CONFIGURE_OPTIONS="$SODIUM_OPTIONS --host=x86_64-apple-darwin10 --disable-shared"
 		fi
+
 	else
 		echo "Unsupported platform $PLATFORM_NAME"
 		exit 1
 	fi
 	
-    make distclean > /dev/null
-	
 	rm -rf "$SODIUM_INSTALL"
 	mkdir -p "$SODIUM_INSTALL"
 	
+	export CFLAGS="$CFLAGS"
+	export LDFLAGS="$LDFLAGS"
+	export PATH="$PLATFORM_DEVELOPER_BIN_DIR:$PLATFORM_DEVELOPER_USR_DIR/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+	export CC="xcrun -sdk $PLATFORM_NAME cc $CFLAGS"
     ./configure $CONFIGURE_OPTIONS
 
 
-	make -j${PROCESSORS} check && make -j${PROCESSORS} install || exit 1
+	make -j${PROCESSORS} install || exit 1
 
 	echo "Creating $LIB_PRODUCT_NAME for $BUILDARCH in $TARGET_TEMP_DIR"
 	cp "$SODIUM_INSTALL/lib/libsodium.a" "$TARGET_TEMP_DIR/$BUILDARCH-$LIB_PRODUCT_NAME"
