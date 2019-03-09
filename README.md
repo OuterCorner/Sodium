@@ -1,7 +1,5 @@
 # Sodium
 
-# OpenSSL.framework
-
 ![Platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20iOS-lightgrey.svg)
 ![Carthage](https://img.shields.io/badge/Carthage-compatible-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
