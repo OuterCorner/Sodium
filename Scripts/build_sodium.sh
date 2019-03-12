@@ -40,7 +40,7 @@ SODIUM_OPTIONS="$LIBSODIUM_ENABLE_MINIMAL_FLAG --prefix=$SODIUM_INSTALL"
 NPROCESSORS=$(getconf NPROCESSORS_ONLN 2>/dev/null || getconf _NPROCESSORS_ONLN 2>/dev/null)
 PROCESSORS=${NPROCESSORS:-3}
 
-echo "Creating $LIB_PRODUCT_NAME with $CONFIGURE_OPTIONS for architectures: $ARCHS"
+echo "Creating $LIB_PRODUCT_NAME with $SODIUM_OPTIONS for architectures: $ARCHS"
 
 for BUILDARCH in $ARCHS
 do
