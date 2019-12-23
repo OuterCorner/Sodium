@@ -3,33 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2793ABD723B1149E00A0DCE2 /* CSodium in Frameworks */ = {isa = PBXBuildFile; productRef = 2793ABD623B1149E00A0DCE2 /* CSodium */; };
 		D7810CFD2232DF1E00AD8B2F /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = D7810CFB2232DF1E00AD8B2F /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7810D142232E80A00AD8B2F /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7810D092232DF6C00AD8B2F /* libsodium.a */; };
 		D7810D452232FB6C00AD8B2F /* Sodium.m in Sources */ = {isa = PBXBuildFile; fileRef = D7810D442232FB6C00AD8B2F /* Sodium.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D7810D112232E7FA00AD8B2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D7810CEF2232DF1D00AD8B2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D7810D082232DF6C00AD8B2F;
-			remoteInfo = sodium;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D7810CF82232DF1E00AD8B2F /* Sodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7810CFB2232DF1E00AD8B2F /* Sodium.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sodium.h; sourceTree = "<group>"; };
 		D7810CFC2232DF1E00AD8B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7810D042232DF3F00AD8B2F /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
-		D7810D092232DF6C00AD8B2F /* libsodium.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsodium.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7810D0E2232DF9700AD8B2F /* sodium.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = sodium.xcconfig; sourceTree = "<group>"; };
-		D7810D0F2232E13F00AD8B2F /* build_sodium.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_sodium.sh; sourceTree = "<group>"; };
 		D7810D442232FB6C00AD8B2F /* Sodium.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sodium.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,7 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7810D142232E80A00AD8B2F /* libsodium.a in Frameworks */,
+				2793ABD723B1149E00A0DCE2 /* CSodium in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +36,6 @@
 			isa = PBXGroup;
 			children = (
 				D7810D032232DF2D00AD8B2F /* Config */,
-				D7810D0D2232DF7900AD8B2F /* Scripts */,
 				D7810CFA2232DF1E00AD8B2F /* Sodium */,
 				D7810CF92232DF1E00AD8B2F /* Products */,
 				D7810D132232E80A00AD8B2F /* Frameworks */,
@@ -60,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				D7810CF82232DF1E00AD8B2F /* Sodium.framework */,
-				D7810D092232DF6C00AD8B2F /* libsodium.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,17 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				D7810D042232DF3F00AD8B2F /* project.xcconfig */,
-				D7810D0E2232DF9700AD8B2F /* sodium.xcconfig */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		D7810D0D2232DF7900AD8B2F /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				D7810D0F2232E13F00AD8B2F /* build_sodium.sh */,
-			);
-			path = Scripts;
 			sourceTree = "<group>";
 		};
 		D7810D132232E80A00AD8B2F /* Frameworks */ = {
@@ -126,27 +102,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				D7810D122232E7FA00AD8B2F /* PBXTargetDependency */,
 			);
 			name = Sodium;
+			packageProductDependencies = (
+				2793ABD623B1149E00A0DCE2 /* CSodium */,
+			);
 			productName = Sodium;
 			productReference = D7810CF82232DF1E00AD8B2F /* Sodium.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		D7810D082232DF6C00AD8B2F /* sodium */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D7810D0A2232DF6C00AD8B2F /* Build configuration list for PBXNativeTarget "sodium" */;
-			buildPhases = (
-				D7810D102232E16B00AD8B2F /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = sodium;
-			productName = sodium;
-			productReference = D7810D092232DF6C00AD8B2F /* libsodium.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -159,9 +122,7 @@
 				TargetAttributes = {
 					D7810CF72232DF1E00AD8B2F = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					D7810D082232DF6C00AD8B2F = {
-						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -171,14 +132,17 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D7810CEE2232DF1D00AD8B2F;
+			packageReferences = (
+				2793ABD523B1149E00A0DCE2 /* XCRemoteSwiftPackageReference "CSodium" */,
+			);
 			productRefGroup = D7810CF92232DF1E00AD8B2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D7810CF72232DF1E00AD8B2F /* Sodium */,
-				D7810D082232DF6C00AD8B2F /* sodium */,
 			);
 		};
 /* End PBXProject section */
@@ -194,23 +158,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D7810D102232E16B00AD8B2F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nsh \"$SRCROOT/Scripts/build_sodium.sh\"\n";
-		};
 		D7810D152232E83100AD8B2F /* Copy Sodium Headers */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,14 +188,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D7810D122232E7FA00AD8B2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D7810D082232DF6C00AD8B2F /* sodium */;
-			targetProxy = D7810D112232E7FA00AD8B2F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D7810CFE2232DF1E00AD8B2F /* Debug */ = {
@@ -374,8 +313,8 @@
 		};
 		D7810D012232DF1E00AD8B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7810D0E2232DF9700AD8B2F /* sodium.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -389,19 +328,20 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outercorner.Sodium;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		D7810D022232DF1E00AD8B2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7810D0E2232DF9700AD8B2F /* sodium.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -415,34 +355,12 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outercorner.Sodium;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D7810D0B2232DF6C00AD8B2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7810D0E2232DF9700AD8B2F /* sodium.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D7810D0C2232DF6C00AD8B2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7810D0E2232DF9700AD8B2F /* sodium.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -467,16 +385,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7810D0A2232DF6C00AD8B2F /* Build configuration list for PBXNativeTarget "sodium" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D7810D0B2232DF6C00AD8B2F /* Debug */,
-				D7810D0C2232DF6C00AD8B2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2793ABD523B1149E00A0DCE2 /* XCRemoteSwiftPackageReference "CSodium" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OuterCorner/CSodium.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2793ABD623B1149E00A0DCE2 /* CSodium */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2793ABD523B1149E00A0DCE2 /* XCRemoteSwiftPackageReference "CSodium" */;
+			productName = CSodium;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D7810CEF2232DF1D00AD8B2F /* Project object */;
 }

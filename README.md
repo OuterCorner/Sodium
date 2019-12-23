@@ -30,8 +30,6 @@ And run:
 carthage update
 ```
 
-By default Carthage will download the pre-build binaries (faster), if you want to compile from source pass ```--no-use-binaries``` to the update command above.
-
 ## Usage
 
 After importing the umbrella header:
