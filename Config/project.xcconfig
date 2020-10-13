@@ -10,6 +10,3 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator
-
-LIBRARY_SEARCH_PATHS[sdk=macosx*] = $BUILD_ROOT/../../SourcePackages/checkouts/CSodium/Libs/macos
-LIBRARY_SEARCH_PATHS[sdk=iphone*] = $BUILD_ROOT/../../SourcePackages/checkouts/CSodium/Libs/ios

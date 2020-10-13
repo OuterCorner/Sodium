@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2793ABD723B1149E00A0DCE2 /* CSodium in Frameworks */ = {isa = PBXBuildFile; productRef = 2793ABD623B1149E00A0DCE2 /* CSodium */; };
+		272C8E7F2535BEC60085764E /* CSodium in Frameworks */ = {isa = PBXBuildFile; productRef = 272C8E7E2535BEC60085764E /* CSodium */; };
 		D7810CFD2232DF1E00AD8B2F /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = D7810CFB2232DF1E00AD8B2F /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7810D452232FB6C00AD8B2F /* Sodium.m in Sources */ = {isa = PBXBuildFile; fileRef = D7810D442232FB6C00AD8B2F /* Sodium.m */; };
 /* End PBXBuildFile section */
@@ -25,7 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2793ABD723B1149E00A0DCE2 /* CSodium in Frameworks */,
+				272C8E7F2535BEC60085764E /* CSodium in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 			);
 			name = Sodium;
 			packageProductDependencies = (
-				2793ABD623B1149E00A0DCE2 /* CSodium */,
+				272C8E7E2535BEC60085764E /* CSodium */,
 			);
 			productName = Sodium;
 			productReference = D7810CF82232DF1E00AD8B2F /* Sodium.framework */;
@@ -174,7 +174,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "HEADERS_SOURCE_DIR=\"$TARGET_BUILD_DIR/headers/sodium/\"\nHEADERS_INSTALL_DIR=\"$BUILT_PRODUCTS_DIR\"/\"$PUBLIC_HEADERS_FOLDER_PATH\"\nHEADER_LIST=`ls \"$HEADERS_SOURCE_DIR\"/*.h\"`\n\nmkdir -p \"$HEADERS_INSTALL_DIR\"\ncp -R \"$HEADERS_SOURCE_DIR\" \"$HEADERS_INSTALL_DIR\"\n\ncd \"$HEADERS_INSTALL_DIR\"\nls *.h | grep -v \"Sodium.h\" | sed -Ee \"s|(.+\\.h)$|#import <Sodium\\/\\1>|\" >> \"$HEADERS_INSTALL_DIR\"/Sodium.h\n";
+			shellScript = "HEADERS_SOURCE_DIR=\"$TARGET_BUILD_DIR/include/sodium/\"\nHEADERS_INSTALL_DIR=\"$BUILT_PRODUCTS_DIR\"/\"$PUBLIC_HEADERS_FOLDER_PATH\"\nHEADER_LIST=`ls \"$HEADERS_SOURCE_DIR\"/*.h\"`\n\nmkdir -p \"$HEADERS_INSTALL_DIR\"\ncp -R \"$HEADERS_SOURCE_DIR\" \"$HEADERS_INSTALL_DIR\"\n\ncd \"$HEADERS_INSTALL_DIR\"\nls *.h | grep -v \"Sodium.h\" | sed -Ee \"s|(.+\\.h)$|#import <Sodium\\/\\1>|\" >> \"$HEADERS_INSTALL_DIR\"/Sodium.h\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -328,7 +328,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lsodium",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outercorner.Sodium;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -355,7 +358,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lsodium",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outercorner.Sodium;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -393,13 +399,13 @@
 			repositoryURL = "https://github.com/OuterCorner/CSodium.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2793ABD623B1149E00A0DCE2 /* CSodium */ = {
+		272C8E7E2535BEC60085764E /* CSodium */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2793ABD523B1149E00A0DCE2 /* XCRemoteSwiftPackageReference "CSodium" */;
 			productName = CSodium;
