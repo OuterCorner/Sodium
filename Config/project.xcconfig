@@ -10,3 +10,5 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator
+
+APPLICATION_EXTENSION_API_ONLY = YES
