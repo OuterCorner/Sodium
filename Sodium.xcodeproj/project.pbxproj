@@ -13,6 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272C8E882535CFA40085764E /* create-xcframework.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "create-xcframework.sh"; sourceTree = "<group>"; };
 		D7810CF82232DF1E00AD8B2F /* Sodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7810CFB2232DF1E00AD8B2F /* Sodium.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sodium.h; sourceTree = "<group>"; };
 		D7810CFC2232DF1E00AD8B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,10 +33,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272C8E872535CFA40085764E /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				272C8E882535CFA40085764E /* create-xcframework.sh */,
+			);
+			path = Scripts;
+			sourceTree = SOURCE_ROOT;
+		};
 		D7810CEE2232DF1D00AD8B2F = {
 			isa = PBXGroup;
 			children = (
 				D7810D032232DF2D00AD8B2F /* Config */,
+				272C8E872535CFA40085764E /* Scripts */,
 				D7810CFA2232DF1E00AD8B2F /* Sodium */,
 				D7810CF92232DF1E00AD8B2F /* Products */,
 				D7810D132232E80A00AD8B2F /* Frameworks */,
