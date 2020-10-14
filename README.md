@@ -6,7 +6,7 @@
 
 This project simply wraps libsodium into a dynamic framework for iOS and macOS.
 
-Current libsodium version used: 1.0.17
+Current libsodium version used: 1.0.18
 
 ## Installation
 
@@ -22,7 +22,7 @@ You have a few different options:
 In your `Package.swift`, add `Sodium` as a dependency:
 ```swift
 dependencies: [
-  .package(url: "https://github.com/OuterCorner/Sodium", from: "1.0.17")
+  .package(url: "https://github.com/OuterCorner/Sodium", from: "1.0.18")
 ],
 ```
 
