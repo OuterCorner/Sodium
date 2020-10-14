@@ -17,17 +17,20 @@ You have a few different options:
  *  Include the Sodium.xcodeproj as a dependency in your project. This is what the projects under ```Examples/``` are doing. Doing this means Sodium.framework will be compiled alongside your project, including after every clean.  
  *  Use a pre-built Sodium.framework. You can find them under [Releases](https://github.com/OuterCorner/Sodium/releases).
 
-### Carthage
+### SwiftPM
 
-Add Sodium as a dependency on your ```Cartfile```:
+In your `Package.swift`, add `Sodium` as a dependency:
+```swift
+dependencies: [
+  .package(url: "https://github.com/OuterCorner/Sodium", from: "1.0.17")
+],
+```
 
-```
-github "OuterCorner/Sodium"
-```
-And run:
-
-```
-carthage update
+Associate the dependency with your target:
+```swift
+targets: [
+  .target(name: "App", dependencies: ["Sodium"])
+]
 ```
 
 ## Usage
