@@ -9,6 +9,8 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
+SODIUM_VERSION = 1.0.18
+
 SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator
 
 APPLICATION_EXTENSION_API_ONLY = YES
