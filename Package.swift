@@ -18,8 +18,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Sodium",
-            url: "https://github.com/OuterCorner/Sodium/releases/download/1.0.18+201014.0/Sodium.xcframework.zip",
-            checksum: "ee4dadc153329ab5b3f11aa73a64ed677be1026017819f7b3b198fc4d5c35986"
+            url: "https://github.com/OuterCorner/Sodium/releases/download/1.0.18+201204.0/Sodium.xcframework.zip",
+            checksum: "da4262460cedd7d3e7d89e3d47636811faaa68e10e3e22a6a1917001ccfcf40c"
         )
     ]
 )
