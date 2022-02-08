@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "CSodium",
-        "repositoryURL": "https://github.com/OuterCorner/CSodium.git",
+        "repositoryURL": "https://github.com/OuterCorner/CSodium",
         "state": {
           "branch": null,
-          "revision": "27a8e6e88219527175518aadb693f7773cb071e5",
-          "version": "1.0.1"
+          "revision": "24421983744eaee4d4d632e84d260b9a58ac0409",
+          "version": "1.0.2"
         }
       }
     ]

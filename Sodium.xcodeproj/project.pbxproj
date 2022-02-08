@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		272C8E7F2535BEC60085764E /* CSodium in Frameworks */ = {isa = PBXBuildFile; productRef = 272C8E7E2535BEC60085764E /* CSodium */; };
+		27633F8827B27E49006C5A8D /* CSodium in Frameworks */ = {isa = PBXBuildFile; productRef = 27633F8727B27E49006C5A8D /* CSodium */; };
 		D7810CFD2232DF1E00AD8B2F /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = D7810CFB2232DF1E00AD8B2F /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7810D452232FB6C00AD8B2F /* Sodium.m in Sources */ = {isa = PBXBuildFile; fileRef = D7810D442232FB6C00AD8B2F /* Sodium.m */; };
 /* End PBXBuildFile section */
@@ -26,7 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272C8E7F2535BEC60085764E /* CSodium in Frameworks */,
+				27633F8827B27E49006C5A8D /* CSodium in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 			);
 			name = Sodium;
 			packageProductDependencies = (
-				272C8E7E2535BEC60085764E /* CSodium */,
+				27633F8727B27E49006C5A8D /* CSodium */,
 			);
 			productName = Sodium;
 			productReference = D7810CF82232DF1E00AD8B2F /* Sodium.framework */;
@@ -146,7 +146,7 @@
 			);
 			mainGroup = D7810CEE2232DF1D00AD8B2F;
 			packageReferences = (
-				2793ABD523B1149E00A0DCE2 /* XCRemoteSwiftPackageReference "CSodium" */,
+				27633F8627B27E49006C5A8D /* XCRemoteSwiftPackageReference "CSodium" */,
 			);
 			productRefGroup = D7810CF92232DF1E00AD8B2F /* Products */;
 			projectDirPath = "";
@@ -404,20 +404,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2793ABD523B1149E00A0DCE2 /* XCRemoteSwiftPackageReference "CSodium" */ = {
+		27633F8627B27E49006C5A8D /* XCRemoteSwiftPackageReference "CSodium" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/OuterCorner/CSodium.git";
+			repositoryURL = "https://github.com/OuterCorner/CSodium";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		272C8E7E2535BEC60085764E /* CSodium */ = {
+		27633F8727B27E49006C5A8D /* CSodium */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2793ABD523B1149E00A0DCE2 /* XCRemoteSwiftPackageReference "CSodium" */;
+			package = 27633F8627B27E49006C5A8D /* XCRemoteSwiftPackageReference "CSodium" */;
 			productName = CSodium;
 		};
 /* End XCSwiftPackageProductDependency section */
