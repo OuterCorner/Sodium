@@ -184,7 +184,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "HEADERS_SOURCE_DIR=\"$BUILT_PRODUCTS_DIR/include/sodium/\"\nHEADERS_INSTALL_DIR=\"$BUILT_PRODUCTS_DIR\"/\"$PUBLIC_HEADERS_FOLDER_PATH\"\n\nmkdir -p \"$HEADERS_INSTALL_DIR\"\ncp -R \"$HEADERS_SOURCE_DIR\" \"$HEADERS_INSTALL_DIR\"\n\nsed -i.bak \"s/\\#include\\ \\\"\\(.*\\)\\\"/\\#include\\ \\<Sodium\\/\\1\\>/g\" \"$HEADERS_INSTALL_DIR/\"*.h\ncd \"$HEADERS_INSTALL_DIR\"\nrm *.bak\nls *.h | grep -v \"Sodium.h\" | sed -Ee \"s|(.+\\.h)$|#include <Sodium\\/\\1>|\" >> \"$HEADERS_INSTALL_DIR\"/Sodium.h\n";
+			shellScript = "HEADERS_SOURCE_DIR=\"$BUILT_PRODUCTS_DIR/include/sodium\"\nHEADERS_INSTALL_DIR=\"$BUILT_PRODUCTS_DIR\"/\"$PUBLIC_HEADERS_FOLDER_PATH\"\n\nmkdir -p \"$HEADERS_INSTALL_DIR\"\ncp -R \"$HEADERS_SOURCE_DIR\"/*.h \"$HEADERS_INSTALL_DIR\"\n\nsed -i.bak \"s/\\#include\\ \\\"\\(.*\\)\\\"/\\#include\\ \\<Sodium\\/\\1\\>/g\" \"$HEADERS_INSTALL_DIR/\"*.h\ncd \"$HEADERS_INSTALL_DIR\"\nrm *.bak\nls *.h | grep -v \"Sodium.h\" | sed -Ee \"s|(.+\\.h)$|#include <Sodium\\/\\1>|\" >> \"$HEADERS_INSTALL_DIR\"/Sodium.h\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
